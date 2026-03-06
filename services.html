@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- EDIT: {{CLINIC_NAME}} -->
+    <title>Our Services — happyteeth clinic</title>
+    <meta name="description" content="Explore the full range of dental services offered at {{CLINIC_NAME}}." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR (same as index.html) -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar__inner">
+                <a href="index.html" class="navbar__logo">
+                    <span><i class="fa-solid fa-tooth"></i></span>
+                    happyteeth clinic
+                </a>
+                <ul class="navbar__links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#contact" class="navbar__cta">Book Appointment</a></li>
+                </ul>
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================================
+       PAGE BANNER
+  ================================================ -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Dental Services</h1>
+            <p>Advanced treatments delivered with care and precision</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span class="current">Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       INTRO PARAGRAPH
+  ================================================ -->
+    <section style="padding:60px 20px 0; background:#fff;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__tag">Complete Dental Care</div>
+                <h2>Everything Your Smile <span>Deserves</span></h2>
+                <p>We offer a comprehensive range of dental treatments using the latest technology to ensure
+                    comfortable, effective, and lasting results for every patient.</p>
+                <div class="section-divider"><span class="section-divider__dot"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       SERVICES GRID (4 Cards)
+       EDIT: All {{SERVICE_X_TITLE}}, {{SERVICE_X_DESC}}, {{SERVICE_X_IMAGE}}
+  ================================================ -->
+    <section class="services-page">
+        <div class="container">
+            <div class="services-grid-4">
+
+                <!-- Service 1 -->
+                <!-- EDIT: {{SERVICE_1_TITLE}}, {{SERVICE_1_DESC}}, {{SERVICE_1_IMAGE}} -->
+                <div class="service-card-lg">
+                    <div class="service-card-lg__overflow">
+                        <img src="https://hamburgdentalcare.com/wp-content/uploads/2018/12/dental-cleaning.jpg"
+                            alt="Teeth Cleaning & Preventive Care" class="service-card-lg__img" />
+                    </div>
+                    <div class="service-card-lg__body">
+                        <div class="service-card-lg__num">Service 01</div>
+                        <h3>Teeth Cleaning & Preventive Care</h3>
+                        <span class="service-price">[ Price: ৳ 1000 ]</span>
+                        <p>Dr. Debanjon Roy, BDS
+                            “roviding gentle, expert dental care.”
+                            “Creating healthy, confident smiles every day.”
+                            “Your smile, our priori</p>
+                        <a href="index.html#contact" class="btn btn--blue" style="font-size:0.85rem;padding:10px 24px;">
+                            Book This Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <!-- EDIT: {{SERVICE_2_TITLE}}, {{SERVICE_2_DESC}}, {{SERVICE_2_IMAGE}} -->
+                <div class="service-card-lg">
+                    <div class="service-card-lg__overflow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFeTCMuUX_sP1be5ZMznfppn5PcHTVK7KSA&s"
+                            alt="Fillings & Cavity Treatment" class="service-card-lg__img" />
+                    </div>
+                    <div class="service-card-lg__body">
+                        <div class="service-card-lg__num">Service 02</div>
+                        <h3>Fillings & Cavity Treatment</h3>
+                        <span class="service-price">[ Price: ৳ 1500 ]</span>
+                        <p>Dr. Debanjon Roy, BDS
+                            “roviding gentle, expert dental care.”
+                            “Creating healthy, confident smiles every day.”
+                            “Your smile, our priori</p>
+                        <a href="index.html#contact" class="btn btn--blue" style="font-size:0.85rem;padding:10px 24px;">
+                            Book This Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <!-- EDIT: {{SERVICE_3_TITLE}}, {{SERVICE_3_DESC}}, {{SERVICE_3_IMAGE}} -->
+                <div class="service-card-lg">
+                    <div class="service-card-lg__overflow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvQVmXewXWVgSvJHxvoLoTHxH1jgyLqQ2Tg&s"
+                            alt="Tooth Extraction & Oral Surgery" class="service-card-lg__img" />
+                    </div>
+                    <div class="service-card-lg__body">
+                        <div class="service-card-lg__num">Service 03</div>
+                        <h3>Tooth Extraction & Oral Surgery</h3>
+                        <span class="service-price">[ Price: ৳ 2000 ]</span>
+                        <p>Dr. Debanjon Roy, BDS
+                            “roviding gentle, expert dental care.”
+                            “Creating healthy, confident smiles every day.”
+                            “Your smile, our priori</p>
+                        <a href="index.html#contact" class="btn btn--blue" style="font-size:0.85rem;padding:10px 24px;">
+                            Book This Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <!-- EDIT: {{SERVICE_4_TITLE}}, {{SERVICE_4_DESC}}, {{SERVICE_4_IMAGE}} -->
+                <div class="service-card-lg">
+                    <div class="service-card-lg__overflow">
+                        <img src="https://www.fitzgeralddentistry.com/wp-content/uploads/2018/12/cosmetic-dentistry-in-Murfreesboro.jpg"
+                            alt="cosmetic dentistry" class="service-card-lg__img" />
+                    </div>
+                    <div class="service-card-lg__body">
+                        <div class="service-card-lg__num">Service 04</div>
+                        <h3>cosmetic dentistry</h3>
+                        <span class="service-price">[ Price: ৳ 2500 ]</span>
+                        <p>Dr. Debanjon Roy, BDS
+                            “roviding gentle, expert dental care.”
+                            “Creating healthy, confident smiles every day.”
+                            “Your smile, our priori</p>
+                        <a href="index.html#contact" class="btn btn--blue" style="font-size:0.85rem;padding:10px 24px;">
+                            Book This Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       FINAL CTA / APPOINTMENT SECTION
+  ================================================ -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Schedule Your Visit?</h2>
+            <p>Contact us today and let our team help you achieve the smile you deserve.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <!-- EDIT: {{PHONE_NUMBER}} -->
+                <a href="tel:01750777093" class="btn btn--white">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+                <!-- EDIT: {{WHATSAPP_NUMBER}} -->
+                <a href="https://wa.me/01750777093" target="_blank" class="btn btn--white">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo">🦷 happyteeth clinic </div>
+                    <p>Dedicated dental care for you and your family.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">📍 House 34, Road No 11, Kaliganj, Dhaka, Bangladesh </a></li>
+                        <li><a href="tel:01750777093">📞 Number</a></li>
+                        <li><a href="#">🕐 visitng hours</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                &copy; 2025 {{CLINIC_NAME}}. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/01750777093" target="_blank" class="whatsapp-float" id="whatsappFloat"
+        aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-float__tooltip">Chat with us!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

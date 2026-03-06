@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ==========================================
+       EDIT: Page title & clinic name
+  =========================================== -->
+  <title>happyteeth clinic — Your Trusted Dental Care</title>
+  <meta name="description" content="Dr.DEBANJON ROY — A Reason to Smile, Every Visit. Book your appointment today." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ================================================
+       STICKY NAVBAR
+       EDIT: {{CLINIC_NAME}}
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar__inner">
+        <!-- Logo / Clinic Name -->
+        <a href="index.html" class="navbar__logo">
+          <span><i class="fa-solid fa-tooth"></i></span>
+          happyteeth clinic
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar__links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#intro">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- Book Appointment CTA -->
+          <li><a href="#contact" class="navbar__cta">Book Appointment</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================
+       HERO SECTION
+       EDIT: {{DOCTOR_NAME}}, {{DOCTOR_DEGREE}},
+             {{DOCTOR_TAGLINE}}, {{DOCTOR_IMAGE}}
+       VIDEO: Replace the <video> src with your clip
+  ================================================ -->
+  <section class="hero" id="hero">
+    <!-- Hero Background Video (replace src with your video) -->
+    <video class="hero__video-bg" autoplay muted loop playsinline>
+      <!-- EDIT: Replace this src with your dental clinic video file or URL -->
+      <source src="https://cdn.coverr.co/videos/coverr-dental-clinic-6891/1080p.mp4" type="video/mp4" />
+      <!-- Fallback: hero background image shows if video fails -->
+      Your browser does not support video.
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <!-- Doctor Text + Buttons -->
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge">Trusted Dental Specialists</div>
+          <!-- EDIT: {{DOCTOR_NAME}} -->
+          <h1>Dr. <span>Dr.DEBANJON ROY</span></h1>
+          <!-- EDIT: {{DOCTOR_DEGREE}} -->
+          <p class="hero__degree">Dr. Debanjon Roy, BDS, MDS (Orthodontics)</p>
+          <!-- EDIT: {{DOCTOR_TAGLINE}} -->
+          <p class="hero__tagline">A Reason to Smile, Every Visit</p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary">
+              <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+            <!-- EDIT: {{PHONE_NUMBER}} -->
+            <a href="tel:01750777093" class="btn btn--outline">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- EDIT: {{DOCTOR_IMAGE}} — Doctor photo -->
+        <div class="hero__image-wrap">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg" alt="Dr.DEBANJON ROY" class="hero__doctor-img" />
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-num counter" data-target="12" data-suffix="+">0+</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num counter" data-target="5000" data-suffix="+">0+</div>
+          <div class="hero__stat-label">Happy Patients</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num counter" data-target="98" data-suffix="%">0%</div>
+          <div class="hero__stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       INTRO / SHORT INTRODUCTION SECTION
+       EDIT: {{SHORT_INTRO}}
+  ================================================ -->
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <!-- Left: Doctor Image -->
+        <div class="intro__image-wrap">
+          <!-- EDIT: {{DOCTOR_IMAGE}} -->
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg" alt="Dr.DEBANJON ROY" class="intro__image" />
+          <div class="intro__badge">
+            <div class="intro__badge-num">🏆</div>
+            <div class="intro__badge-text">Top Rated Clinic</div>
+          </div>
+        </div>
+
+        <!-- Right: Text + Features -->
+        <div class="intro__text">
+          <div class="section-header__tag">About the Doctor</div>
+          <h2>We Care For Your <span>Perfect Smile</span></h2>
+          <!-- EDIT: {{SHORT_INTRO}} — short introduction paragraph -->
+          <p>Dr. Debanjon Roy, BDS
+“roviding gentle, expert dental care.”
+“Creating healthy, confident smiles every day.”
+“Your smile, our priorit”</p>
+          <p>We are committed to providing gentle, effective and lasting dental treatments using state-of-the-art
+            technology.</p>
+
+          <div class="intro__features">
+            <div class="intro__feature">
+              <i><i class="fa-solid fa-check"></i></i>
+              Gentle & Pain-Free Treatments
+            </div>
+            <div class="intro__feature">
+              <i><i class="fa-solid fa-check"></i></i>
+              Advanced Modern Equipment
+            </div>
+            <div class="intro__feature">
+              <i><i class="fa-solid fa-check"></i></i>
+              Experienced & Certified Specialists
+            </div>
+            <div class="intro__feature">
+              <i><i class="fa-solid fa-check"></i></i>
+              Flexible Appointment Scheduling
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn--blue">
+            Learn More About Us <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SERVICES SECTION (3 Preview Cards)
+       EDIT: {{SERVICE_1_TITLE}}, {{SERVICE_1_DESC}}, {{SERVICE_1_IMAGE}}
+             {{SERVICE_2_TITLE}}, {{SERVICE_2_DESC}}, {{SERVICE_2_IMAGE}}
+             {{SERVICE_3_TITLE}}, {{SERVICE_3_DESC}}, {{SERVICE_3_IMAGE}}
+  ================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Our Services</div>
+        <h2>What We <span>Offer</span></h2>
+        <p>Comprehensive dental care services tailored to your needs, delivered with expertise and compassion.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Service Card 1 -->
+        <!-- EDIT: {{SERVICE_1_TITLE}}, {{SERVICE_1_DESC}}, {{SERVICE_1_IMAGE}} -->
+        <div class="service-card">
+          <img src="https://hamburgdentalcare.com/wp-content/uploads/2018/12/dental-cleaning.jpg" alt="Teeth Cleaning & Preventive Care" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🦷</div>
+            <h3>Teeth Cleaning & Preventive Care</h3>
+            <p>Dr. Debanjon Roy, BDS
+“roviding gentle, expert dental care.”
+“Creating healthy, confident smiles every day.”
+“Your smile, our priorit</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <!-- EDIT: {{SERVICE_2_TITLE}}, {{SERVICE_2_DESC}}, {{SERVICE_2_IMAGE}} -->
+        <div class="service-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToFeTCMuUX_sP1be5ZMznfppn5PcHTVK7KSA&s" alt="Fillings & Cavity Treatment" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">🔬</div>
+            <h3>Fillings & Cavity Treatment</h3>
+            <p>Dr. Debanjon Roy, BDS
+“roviding gentle, expert dental care.”
+“Creating healthy, confident smiles every day.”
+“Your smile, our priori</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <!-- EDIT: {{SERVICE_3_TITLE}}, {{SERVICE_3_DESC}}, {{SERVICE_3_IMAGE}} -->
+        <div class="service-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvQVmXewXWVgSvJHxvoLoTHxH1jgyLqQ2Tg&s" alt="Tooth Extraction & Oral Surgery" class="service-card__img" />
+          <div class="service-card__body">
+            <div class="service-card__icon">✨</div>
+            <h3>Tooth Extraction & Oral Surgery</h3>
+            <p>Dr. Debanjon Roy, BDS
+“roviding gentle, expert dental care.”
+“Creating healthy, confident smiles every day.”
+“Your smile, our priori</p>
+            <a href="services.html" class="btn--sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:44px;">
+        <a href="services.html" class="btn btn--blue">
+          View All Services <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TESTIMONIALS SECTION
+       EDIT: {{TESTIMONIAL_1}}, {{TESTIMONIAL_2}}
+       Add author names after the testimonial text
+  ================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__tag">Patient Reviews</div>
+        <h2>What Our <span>Patients Say</span></h2>
+        <p>Real experiences from real patients who trust us with their smiles.</p>
+        <div class="section-divider"><span class="section-divider__dot"></span></div>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <!-- Testimonial 1 -->
+        <!-- EDIT: {{TESTIMONIAL_1}} -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"“I had a wonderful experience at Dr. Debanjon Roy’s clinic. The staff is friendly, the treatment was painless, and my smile has never looked better. Highly recommended!”
+— Ayesha Rahman"</blockquote>
+          <div class="testimonial-card__author">
+            <!-- EDIT: Change initial letter and name -->
+            <div class="testimonial-card__avatar">A</div>
+            <div class="testimonial-card__info">
+              <strong>Ahmed Khan</strong>
+              <span>Verified Patient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <!-- EDIT: {{TESTIMONIAL_2}} -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"“Dr. Debanjon Roy is very professional and caring. The clinic is clean, and I felt comfortable throughout my treatment. My teeth feel healthier than ever!”
+— Rafiq Ahmed"</blockquote>
+          <div class="testimonial-card__author">
+            <!-- EDIT: Change initial letter and name -->
+            <div class="testimonial-card__avatar">S</div>
+            <div class="testimonial-card__info">
+              <strong>Sara Rahman</strong>
+              <span>Verified Patient</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT SECTION (narrower, center aligned)
+       EDIT: {{PHONE_NUMBER}}, {{WHATSAPP_NUMBER}},
+             {{CLINIC_ADDRESS}}, {{VISITING_HOURS}}
+  ================================================ -->
+  <section class="contact" id="contact">
+    <div class="container--narrow">
+      <div class="contact__card">
+        <div class="contact__top">
+          <h2>📍 Find Us & Book a Visit</h2>
+          <p>We are here to serve you — reach out any time during visiting hours.</p>
+        </div>
+
+        <div class="contact__info">
+
+          <!-- EDIT: {{PHONE_NUMBER}} -->
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact__item-label">Phone Number</div>
+              <div class="contact__item-val">01750777093</div>
+            </div>
+          </div>
+
+          <!-- EDIT: {{CLINIC_ADDRESS}} -->
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact__item-label">Clinic Address</div>
+              <div class="contact__item-val">House 34, Road No 11, Kaliganj, Dhaka, Bangladesh
+            </div>
+          </div>
+
+          <!-- EDIT: {{VISITING_HOURS}} -->
+          <div class="contact__item">
+            <div class="contact__item-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact__item-label">Visiting Hours</div>
+              <div class="contact__item-val">Monday – Friday: 9:00 AM – 7:00 PM
+
+Saturday: 10:00 AM – 4:00 PM
+
+Sunday: Closed</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact__buttons">
+          <!-- EDIT: {{PHONE_NUMBER}} -->
+          <a href="tel:01750777093" class="btn btn--call">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <!-- EDIT:  — use country code, no + sign e.g. 8801XXXXXXXXX -->
+          <a href="https://wa.me/01750777093" target="_blank" class="btn btn--whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+       EDIT: {{CLINIC_NAME}}, {{CLINIC_ADDRESS}}, {{PHONE_NUMBER}}
+  ================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <!-- Brand / About -->
+        <div class="footer__brand">
+          <div class="footer__logo">🦷 </div>happy teeth clinic
+          <p>Dedicated to providing gentle, compassionate and world-class dental care to patients of all ages.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <!-- EDIT: {{CLINIC_ADDRESS}} -->
+            <li><a href="#">📍House 34, Road No 11, Kaliganj, Dhaka, Bangladesh
+</a></li>
+            <!-- EDIT: {{PHONE_NUMBER}} -->
+            <li><a href="tel:01750777093">📞 Number</a></li>
+            <!-- EDIT: {{VISITING_HOURS}} -->
+            <li><a href="#">🕐 visitin hours</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <!-- EDIT: {{CLINIC_NAME}} -->
+        &copy; 2026 happyteeth clinic. All Rights Reserved. Designed with ❤️ for Healthcare.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================
+       FLOATING WHATSAPP BUTTON
+       EDIT: {{WHATSAPP_NUMBER}}
+  ================================================ -->
+  <a href="https://wa.me/01750777093" target="_blank" class="whatsapp-float" id="whatsappFloat"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
